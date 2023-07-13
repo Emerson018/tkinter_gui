@@ -96,7 +96,7 @@ canvas = tk.Canvas(window, bg = 'green')
 canvas.pack()
 
 #left,top,right, bottom
-canvas.create_rectangle((80,20,100,200), fill= 'red', width= 10)
+canvas.create_rectangle((80,20,50,100), fill= 'purple', width= 5, outline='white')
 
 window.mainloop()
 

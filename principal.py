@@ -15,7 +15,9 @@ window.geometry('800x500')
 
 def gerar_codigo():
     link = entry1.get()
-    output_strig.set('Código gerado!!')
+
+    label2['text'] = 'some text'
+    #output_strig.set('Código gerado!!')
     gera_codigo = qrcode.make(link)
     gera_codigo.save('qrcode_teste.png')
     exibir_qrcode()
@@ -67,4 +69,8 @@ output_label = ttk.Label(master=frame,
                          font = font_label,
                          textvariable=output_strig)
 output_label.pack(pady=5)
+
+label2 = ttk.Label(master=frame, text = 'Testando')
+label2.pack()
+
 window.mainloop()
