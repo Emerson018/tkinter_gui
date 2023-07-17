@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import scrolledtext
 
 def button_func():
     entry_text = entry.get()
@@ -11,15 +12,54 @@ def button_func():
 
 
 window = tk.Tk()
-window.title("Lugar dos testes")
+window.title("DEDO NO CU E GUITAR HERO")
 window.geometry('600x400')
 
 #sobreescreve algo. entry e label estao usando os mesmos dados
 string_var = tk.StringVar()
 #pra n deixar marcado a 'box' e transformar ela em int, str ou bool
 check_var = tk.StringVar()
-#
+
 radio_var = tk.StringVar()
+
+#menu__
+menu = tk.Menu(window)
+#submenu__ tearoff tira as linha do menu
+file_menu = tk.Menu(menu, tearoff= False)
+file_menu.add_command(label= 'New', command= lambda: print('New file'))
+file_menu.add_separator()
+file_menu.add_command(label= 'Open', command= lambda: print('Open file'))
+menu.add_cascade(label= 'File', menu= file_menu)
+
+#another_sub_menu__
+help_check_string = tk.StringVar()
+
+help_menu = tk.Menu(menu, tearoff= False)
+help_menu.add_checkbutton(label= 'putinha?', onvalue= 'on', offvalue= 'off', variable= help_check_string)
+help_menu.add_separator()
+menu.add_cascade(label= 'Help', menu= help_menu)
+
+window.configure(menu= menu)
+
+menu_button = ttk.Menubutton(window, text = 'Menu Button')
+menu_button.pack()
+
+button_sub_menu = tk.Menu(menu_button, tearoff= False)
+button_sub_menu.add_command(label='cachorra', command= lambda: print('safada'))
+button_sub_menu.add_checkbutton(label= 'seleciona ai troxa')
+menu_button.configure(menu= button_sub_menu)
+
+
+
+
+#notebook widget__
+notebook = ttk.Notebook(window)
+tab1 = ttk.Frame(notebook)
+tab2 = ttk.Frame(notebook)
+notebook.add(tab1, text= 'Tab 1')
+notebook.add(tab2, text= 'Tab 2')
+notebook.pack()
+# pra rodar em otra tab: ex => label = ttk.Label(tab2,.........)
 
 label = ttk.Label(
         master=window,
@@ -35,7 +75,7 @@ entry.pack()
 
 button = ttk.Button(
         master=window,
-        text='botao de teste',
+        text='botao do lá ele',
         command= button_func)
 button.pack()
 
@@ -80,7 +120,9 @@ combo.bind(
         '<<ComboboxSelected>>',
         lambda event: combo_label.config
         (text = f'Valor selecionado: {nome_string.get()}'))
-combo_label = ttk.Label(window, text= 'Lista de Itens')
+combo_label = ttk.Label(
+        window,
+         text= 'Lista de Itens')
 combo_label.pack()
 
 #spinbox__
@@ -91,12 +133,43 @@ spin.bind('<<Increment>>', lambda event: print('up'))
 spin.bind('<<Decrement>>', lambda event: print('down')) 
 spin.pack()
 
+#slider
+scale_int = tk.IntVar(value= 0)
+scale = ttk.Scale(
+        window,
+        command= lambda value: print(scale_int.get()),
+        from_ = 0,
+        to = 25,
+        length= 150,
+        orient= 'horizontal',
+        variable = scale_int)
+scale.pack()
+
+#scroll_text__
+
+#progress_bar_-
+progress = ttk.Progressbar(
+        window,
+        variable= scale_int,
+        maximum= 25,
+        orient= 'horizontal',
+        mode= 'determinate',
+        length= 100)
+progress.pack()
+
 #canvas__
 canvas = tk.Canvas(window, bg = 'green')
 canvas.pack()
 
 #left,top,right, bottom
-canvas.create_rectangle((80,20,50,100), fill= 'purple', width= 5, outline='white')
+canvas.create_rectangle(
+        (20,10,50,50),
+        fill= 'purple', 
+        width= 5, 
+        outline='white')
+
+
+
 
 window.mainloop()
 
