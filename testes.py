@@ -10,10 +10,21 @@ def button_func():
     #desativa a palavra
     label['state'] = 'disable'
 
-
+#window_configs__
 window = tk.Tk()
 window.title("DEDO NO CU E GUITAR HERO")
 window.geometry('600x400')
+window.minsize(200,100)
+window.resizable(True,True)
+#x,y = escala do window
+
+#screen attributes__
+print(window.winfo_screenwidth())
+print(window.winfo_screenheight())
+#window.overrideredirect(True) = tira a barra de menu
+grip = ttk.Sizegrip(window)
+grip.place(relx= 1.0, rely= 1.0, anchor= 'se')
+
 
 #sobreescreve algo. entry e label estao usando os mesmos dados
 string_var = tk.StringVar()
@@ -61,11 +72,14 @@ notebook.add(tab2, text= 'Tab 2')
 notebook.pack()
 # pra rodar em otra tab: ex => label = ttk.Label(tab2,.........)
 
+#parei em 4:15:52
+
 label = ttk.Label(
         master=window,
         text='texto inicial',
+        background= 'yellow', #cor
         textvariable=string_var)
-label.pack()
+label.pack(side= 'bottom', fill='both') #escolhe lado e preenche
 
 #pra poder dar entrada no que tu escrever
 entry = ttk.Entry(

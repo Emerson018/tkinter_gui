@@ -4,6 +4,8 @@ import re
 import csv
 import os
 
+#testes para nao encher a outra pagina de estudo
+
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'}
 url = "https://www.leroymerlin.com.br/kit-200-abracadeiras-nylon-3,6x150mm-preto-pacote-kala_1567337335"
 req = requests.get(url,headers=headers)
