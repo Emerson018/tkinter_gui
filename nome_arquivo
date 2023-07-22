@@ -1,2 +1,113 @@
+"
+"
+"
+","<div class=""price-tag-wrapper"" data-branded-installments-amount=""1"" data-branded-installments-total-value=""43,15"" data-branded-installments-value=""43,15"" data-discount-percentage=""15"" data-discount-type="""" data-from-price-decimals=""85"" data-from-price-integers=""50"" data-has-cross-services="""" data-hide-price="""" data-installments-amount=""1"" data-installments-total-value=""43,15"" data-installments-value=""43,15"" data-is-assisted-sale="""" data-is-offer-schema-enabled=""1"" data-is-on-demand="""" data-is-outlet="""" data-is-services-enabled=""1"" data-is-sold-out="""" data-payment-methods-discount="""" data-product-price-tag="""" data-shop-name=""Empório Modelo Multiloja"" data-should-render-free-shipping-badge="""" data-should-render-outlet-badge="""" data-to-price-decimals=""15"" data-to-price-integers=""43"" data-unit=""cada"">
+<div class=""shell-loader price-tag-border-top""></div>
+<div class=""shell-loader price-tag-to-price""></div>
+<div class=""shell-loader price-tag-installments""></div>
+<div class=""shell-loader price-tag-sold-by""></div>
+</div>","
+","<div class=""payment-method"" data-component=""payment-method"" data-product-id=""1567337335"" data-shop-id=""5f088e740342a20ef61d6b23"">
+<a 5f088e740342a20ef61d6b23="""" class=""payment-trigger color-primary text-underline"" data-payment-methods-="""" data-seller-link="""" href=""#"">
+<strong>
+Formas de pagamento
+</strong>
+</a>
+</div>","
+","<div class=""purchase-buttons-wrapper"">
+<div>
+<button class=""ecommerce-button purchase-button"" data-button=""ecommerce"" data-component=""add-to-cart"" data-override-product-quantity=""false"" data-product-code=""1567337335"" data-shop-offer-id=""602ced4d351a85320013263a"">
+<span>Comprar e receber</span>
+</button>
+</div>
+<span class=""purchase-buttons-option"">ou</span>
+<script type=""5becbe88410225a33e520552-text/javascript"">
+window.dataLayer = window.dataLayer || []
 
-","<div class=""price-tag-wrapper"" data-branded-installments-amount=""1"" data-branded-installments-total-value=""43,15"" data-branded-installments-value=""43,15"" data-discount-percentage=""15"" data-discount-type="""" data-from-price-decimals=""85"" data-from-price-integers=""50"" data-has-cross-services="""" data-hide-price="""" data-installments-amount=""1"" data-installments-total-value=""43,15"" data-installments-value=""43,15"" data-is-assisted-sale="""" data-is-offer-schema-enabled=""1"" data-is-on-demand="""" data-is-outlet="""" data-is-services-enabled=""1"" data-is-sold-out="""" data-payment-methods-discount="""" data-product-price-tag="""" data-shop-name=""Empï¿½rio Modelo Multiloja"" data-should-render-free-shipping-badge="""" data-should-render-outlet-badge="""" data-to-price-decimals=""15"" data-to-price-integers=""43"" data-unit=""cada"">
+var shopNameElement = document.querySelector('[data-seller-selected]')
+var shopName = shopNameElement && shopNameElement.textContent
+
+function addToCartDataLayer () {
+  const integers = '43'.replace('.', '')
+  const price = integers + '.15'
+
+  window.dataLayer.push({
+    'event': 'addToCart',
+    'ecommerce': {
+      'currencyCode': 'BRL',
+      'add': {
+        'products': [{
+          'name': 'Kit 200 Abraçadeiras Nylon 3,6x150mm Preto Pacote Kala',
+          'id': '1567337335',
+          'price': price,
+          'brand': 'Kala',
+          'category': 'materiais-eletricos/cabos-e-fios-eletricos/organizadores-de-cabos-e-fios-fixadores-e-acessorios',
+          'quantity': 1,
+          'dimension8': 'delivery',
+          'dimension15': shopName
+        }]
+      }
+    }
+  })
+}
+
+</script>
+<div>
+<button class=""pickup-in-store-button purchase-button"" data-button=""pickupInStore"" data-component=""stock-checker tooltip"" data-lm=""1567337335"" data-pickup-button="""" data-region=""grande_sao_paulo"" data-tooltip="".tooltip"" disabled="""">
+Comprar e retirar
+<div class=""tooltip align-center"" data-tooltip-message="""" x-placement=""top"">
+Produto indisponível.
+</div>
+</button>
+</div>
+<script type=""5becbe88410225a33e520552-text/javascript"">
+window.dataLayer = window.dataLayer || []
+
+var shopNameElement = document.querySelector('[data-seller-selected]')
+var shopName = shopNameElement && shopNameElement.textContent
+
+function addToCartDataLayer () {
+  const integers = '43'.replace('.', '')
+  const price = integers + '.15'
+
+  window.dataLayer.push({
+    'event': 'addToCart',
+    'ecommerce': {
+      'currencyCode': 'BRL',
+      'add': {
+        'products': [{
+          'name': 'Kit 200 Abraçadeiras Nylon 3,6x150mm Preto Pacote Kala',
+          'id': '1567337335',
+          'price': price,
+          'brand': 'Kala',
+          'category': 'materiais-eletricos/cabos-e-fios-eletricos/organizadores-de-cabos-e-fios-fixadores-e-acessorios',
+          'quantity': 1,
+          'dimension8': 'delivery',
+          'dimension15': shopName
+        }]
+      }
+    }
+  })
+}
+
+</script>
+</div>","
+","<div data-has-cross-services="""" data-is-services-enabled=""1"" data-product-id=""1567337335"" data-region-id=""grande_sao_paulo"" data-service-label="""" data-shop-name=""Empório Modelo Multiloja"">
+ 
+</div>","
+","<div class=""wrapper-padding"" data-is-lespace-product="""" data-is-vef="""" data-postal-code="""" data-product-id=""1567337335"" data-purchase-buttons='{""ecommerce"":{""visible"":true,""enabled"":true,""label"":""Comprar"",""tooltip"":""""},""pickupInStore"":{""visible"":true,""enabled"":false,""label"":""Comprar"",""tooltip"":""Produto indispon\u00edvel.""},""assistedSale"":{""visible"":false}}' data-skus='[{""id"":""602ced4d351a85320013263a"",""toPrice"":43.15,""discountPercentage"":15,""installmentsValue"":""43,15"",""installmentsAmount"":1,""installmentsTotalValue"":""43,15"",""brandedInstallmentsValue"":""43,15"",""brandedInstallmentsAmount"":1,""brandedInstallmentsTotalValue"":""43,15"",""price"":{""to"":{""integers"":""43"",""decimals"":""15""},""from"":{""integers"":""50"",""decimals"":""85""},""regionPrice"":null,""suggested"":null},""shop"":{""id"":""5f088e740342a20ef61d6b23"",""name"":""Emp\u00f3rio Modelo Multiloja"",""logo"":""https:\/\/cdn.leroymerlin.com.br\/emporio_modelo_multiloja_5055_60x60.png""},""limitQuantity"":null,""skuInstance"":{""dynamic"":true,""with"":[],""timestamps"":true,""mutable"":false,""localMock"":null},""paymentMethodsDiscount"":null,""discountType"":"""",""isPrioritizedInTheBuyBox"":false,""purchaseButtons"":{""ecommerce"":true,""pickupInStore"":false},""consultButtons"":{""ecommerceStock"":false}}]'></div>","
+","<div class=""wrapper-padding"" quantity-parent="""">
+<div class=""product-map-stock"">
+<div class=""stock-info-wrapper"" data-brand=""Kala"" data-button-disabled=""true"" data-category=""materiais-eletricos/cabos-e-fios-eletricos/organizadores-de-cabos-e-fios-fixadores-e-acessorios"" data-department="""" data-is-locate-on-store-enabled="""" data-lm=""1567337335"" data-packaging=""data-packaging-unit="" data-price='{""integers"":""43"",""decimals"":""15""}' data-product-name=""Kit 200 Abraçadeiras Nylon 3,6x150mm Preto Pacote Kala"" data-region=""grande_sao_paulo"" data-show-batch-search-button="""" data-stock-info="""" data-stock-info-wrapper="""" data-store-name="""" data-store-slug="""" data-unit=""cada"">
+<div class=""stock-buttons"">
+<div class=""shell-loader stock-buttons-shell""></div>
+</div>
+</div>
+</div>
+<div class=""product-whatsapp"" data-call-center-content="""" data-whatsapp-enabled=""1""></div>
+<div data-exclusive-sale-site-message="""" data-visibility=""mobile""></div>
+<div data-stamp-leroy-warrant="""" data-visibility=""mobile""></div>
+</div>","
+"
+"
+"
