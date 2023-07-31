@@ -46,7 +46,9 @@ menu.add_cascade(label= 'File', menu= file_menu)
 help_check_string = tk.StringVar()
 
 help_menu = tk.Menu(menu, tearoff= False)
-help_menu.add_checkbutton(label= 'putinha?', onvalue= 'on', offvalue= 'off', variable= help_check_string)
+help_menu.add_checkbutton(label= 'putinha?',
+                onvalue= 'on', 
+                offvalue= 'off', variable= help_check_string)
 help_menu.add_separator()
 menu.add_cascade(label= 'Help', menu= help_menu)
 
@@ -77,7 +79,7 @@ notebook.pack()
 label = ttk.Label(
         master=window,
         text='texto inicial',
-        background= 'yellow', #cor
+        background= 'pink', #cor
         textvariable=string_var)
 label.pack(side= 'bottom', fill='both') #escolhe lado e preenche
 
@@ -124,7 +126,8 @@ radio2.pack()
 items = ('Sayrix', 'Emerson', 'relampago')
 
 nome_string = tk.StringVar(value = items[0])
-combo = ttk.Combobox(window,textvariable= nome_string)
+combo = ttk.Combobox(window,
+        textvariable= nome_string)
 combo.configure(value = items)
 combo.pack()
 
@@ -136,7 +139,7 @@ combo.bind(
         (text = f'Valor selecionado: {nome_string.get()}'))
 combo_label = ttk.Label(
         window,
-         text= 'Lista de Itens')
+        text= 'Lista de Itens')
 combo_label.pack()
 
 #spinbox__
@@ -153,7 +156,7 @@ scale = ttk.Scale(
         window,
         command= lambda value: print(scale_int.get()),
         from_ = 0,
-        to = 25,
+        to = 100,
         length= 150,
         orient= 'horizontal',
         variable = scale_int)
@@ -161,25 +164,26 @@ scale.pack()
 
 #scroll_text__
 
-#progress_bar_-
+#progress_bar_
 progress = ttk.Progressbar(
         window,
         variable= scale_int,
-        maximum= 25,
+        maximum= 100,
         orient= 'horizontal',
         mode= 'determinate',
-        length= 100)
+        length= 50)
 progress.pack()
 
 #canvas__
-canvas = tk.Canvas(window, bg = 'green')
+canvas = tk.Canvas(window,
+        bg = 'blue')
 canvas.pack()
 
 #left,top,right, bottom
 canvas.create_rectangle(
-        (20,10,50,50),
+        (259,25,50,100),
         fill= 'purple', 
-        width= 5, 
+        width= 3, 
         outline='white')
 
 
